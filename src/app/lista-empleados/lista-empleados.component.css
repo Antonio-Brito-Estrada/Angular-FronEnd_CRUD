@@ -1,0 +1,43 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #C7C7C7;
+  --text-input-field: #F7F7F7;
+  --hospital-green: #ACD9B2;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+.snack-success{
+  background: #6ea204;
+}
+
+.toast-success {
+  background-color: green;
+}
+.titulo-modal {
+  font-size: 25px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+.detalles-modal{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  /* display: grid;
+  place-items: center;*/
+}
+.title-modal {
+  background: linear-gradient(to right, rgb(2, 117, 83), #bdbec2);
+  /* background: linear-gradient(to right, #080808, #bfbdc2); */
+  /* background: linear-gradient(to right, #080808, #09ee83); */
+  text-transform: uppercase;
+}
+.body-modal{
+  background: linear-gradient(to right, #bfbdc2,#fcf8f8);
+  /* background: linear-gradient(to right, #080808, #09ee83); */
+  text-transform: uppercase;
+}

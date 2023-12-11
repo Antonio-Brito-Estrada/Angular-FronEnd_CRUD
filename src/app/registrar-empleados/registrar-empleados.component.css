@@ -1,0 +1,54 @@
+.snack{
+    color: white;
+    border-radius: 0px;
+  }
+  
+  .snack button{
+    border: none;
+    color: white;
+  }
+  
+  .snack-success{
+    background: #6ea204;
+  }
+  
+  .snack-error{
+    background: #ce1126;
+  }
+
+  .custom-snackbar {
+    background-color: red;
+    color: white;
+  }
+  
+  .gradient-title {
+    /* background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold; */
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .shadow-title {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .text-gradient-title {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  

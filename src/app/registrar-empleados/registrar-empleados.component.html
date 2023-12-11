@@ -1,0 +1,220 @@
+<!-- <p>registrar-empleados works!</p> -->
+
+
+<br>
+        <!--   HACERLO CON MATERIAL ANGULAR
+  <mat-form-field class="form-group col-md-12">
+        <input matInput placeholder="Favorite food" type="number" class="form-control"
+        id="codigo"
+        [(ngModel)]="empleado.codigo"
+        name ="codigo" required>
+      </mat-form-field> -->
+    <!-- <br>
+      <mat-form-field class="example-full-width">
+        <textarea matInput placeholder="Leave a comment"></textarea>
+      </mat-form-field> -->
+
+<div class="col-md-6 offset-md-3">
+  <h3 class="gradient-title">REGISTRAR EMPLEADO</h3>
+  <!-- FORMULARIO FUNCIONA -->
+    <!-- <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Codigo: </label>
+            <input type="number" class="form-control"
+            id="codigo"
+            [(ngModel)]="empleado.codigo"
+            name ="codigo" required>
+        </div>
+        <div class="form-group">
+            <label>Nombre: </label>
+            <input type="text" class="form-control"
+            id="nombre"
+            [(ngModel)]="empleado.nombres"
+            name ="nombre" required>
+        </div>
+        <div class="form-group">
+            <label>Apellido: </label>
+            <input type="text" class="form-control"
+            id="Apellido"
+            [(ngModel)]="empleado.apellidos"
+            name ="apellido">
+        </div>
+        <div class="form-group">
+            <label>Telefono: </label>
+            <input type="number" class="form-control"
+            id="telefono"
+            [(ngModel)]="empleado.telefono"
+            name ="telefono">
+        </div>
+        <div class="form-group">
+            <label>Edad: </label>
+            <input type="number" class="form-control"
+            id="edad"
+            [(ngModel)]="empleado.edad"
+            name ="edad">
+        </div>
+        <div class="row justify-content-between horizontal-gap">
+            <div class="col-12">
+              <div class="row">
+                <div class="offset-6"></div>
+                <div class="col-3">
+                    <button mat-raised-button color="warn"  (click)="irAlaListaDeEmpleados()">Regresar</button>
+                </div>
+                <div class="col-3">
+                  <button mat-raised-button color="primary"  type="submit" >Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </form> -->
+<!-- </div> -->
+      <!-- <div class="container mt-6"> -->
+
+        <!-- FORMULARIO QUE HIZO CHATGPT Y QUEDO CHIDO -->
+        <!-- <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="apellido">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="fechaNacimiento">Fecha de nacimiento</label>
+              <input type="date" class="form-control" id="fechaNacimiento">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Género</label>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="genero" value="masculino">
+                <label class="form-check-label">Masculino</label>
+              </div>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="genero" value="femenino">
+                <label class="form-check-label">Femenino</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+          </div>
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" placeholder="Ingrese su dirección">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="ciudad">Ciudad</label>
+              <input type="text" class="form-control" id="ciudad" placeholder="Ingrese su ciudad">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="codigoPostal">Código postal</label>
+              <input type="text" class="form-control" id="codigoPostal" placeholder="Ingrese su código postal">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="puesto">Puesto</label>
+            <input type="text" class="form-control" id="puesto" placeholder="Ingrese su puesto">
+          </div>
+          <div class="form-group">
+            <label for="numeroSeguroSocial">Número de seguro social</label>
+            <input type="text" class="form-control" id="numeroSeguroSocial" placeholder="Ingrese su número de seguro social">
+          </div>
+          <div class="form-group">
+            <label>Estado civil</label>
+            <select class="form-control">
+              <option value="soltero">Soltero</option>
+              <option value="casado">Casado</option>
+              <option value="divorciado">Divorciado</option>
+              <option value="viudo">Viudo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="redesSociales">Redes sociales</label>
+            <input type="text" class="form-control" id="redesSociales" placeholder="Ingrese sus redes sociales">
+          </div>
+          <div class="form-group">
+            <label for="contrasena">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" placeholder="Ingrese su contraseña">
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form> -->
+      <!-- </div> -->
+      <mat-card>
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="codigo">Clave</label>
+            <input type="number" class="form-control"
+            id="codigo" placeholder="Ingrese el codigo"
+            [(ngModel)]="empleado.codigo"
+            name ="codigo" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nombres">Nombres</label>
+             <input type="text" class="form-control"
+             id="nombre"  placeholder="Ingrese los nombres"
+             [(ngModel)]="empleado.nombres"
+             name ="nombre" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="apellidos">Apellidos</label>
+           <input type="text" class="form-control"
+            id="Apellido" placeholder="Ingrese los Apellidos"
+            [(ngModel)]="empleado.apellidos"
+            name ="apellido">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cedula">Cédula</label>
+            <input type="text" class="form-control" id="cedula" placeholder="Ingrese la cédula"
+            [(ngModel)]="empleado.cedula"  name ="cedula">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad</label>
+          <input type="number" class="form-control"
+          id="edad" placeholder="Ingrese la edad"
+          [(ngModel)]="empleado.edad"
+          name ="edad">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="number" class="form-control"
+          id="telefono" placeholder="Ingrese el teléfono"
+          [(ngModel)]="empleado.telefono"
+          name ="telefono">
+        </div>
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" class="form-control" id="fechaNacimiento"
+          [(ngModel)]="empleado.fecha_nacimiento" name ="fecha_nacimiento">
+        </div>
+        <div class="row justify-content-between horizontal-gap">
+          <div class="col-12">
+            <div class="row">
+              <div class="offset-6"></div>
+              <div class="col-3">
+                  <button mat-raised-button color="warn"  (click)="irAlaListaDeEmpleados()">Regresar</button>
+              </div>
+              <div class="col-3">
+                <button mat-raised-button color="primary"  type="submit" >Guardar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+      </form>
+    </mat-card>
+</div>
+<!-- </mat-card> -->

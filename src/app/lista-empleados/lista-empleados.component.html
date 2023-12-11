@@ -1,0 +1,80 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header title-modal">
+        <h5 class="modal-title" id="exampleModalLabel" class="titulo-modal" style="color: floralwhite;">Detalle empleado</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body body-modal">
+        <div class="detalles-modal col-md-12">
+            <div><b>Nombre: </b><label >{{ empleadoModal.nombres}}</label><br></div>
+            <div><b>Apellidos: </b><label>{{ empleadoModal.apellidos}}</label><br></div>
+            <div><b>Telefono: </b><label>{{ empleadoModal.telefono}}</label><br></div>
+            <div><b>Edad: </b><label>{{ empleadoModal.edad}}</label></div>
+            <div><b>Titulado: </b><label> Si </label></div>
+            <div><b>Cedula profesional: </b><label>{{ empleadoModal.cedula}}</label></div>
+            <div><b>Fecha Nacimiento: </b><label>{{ empleadoModal.fecha_nacimiento}}</label></div>
+        </div>
+      </div>
+      <div class="modal-footer body-modal">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!-- <h1 class="gradient-title">LISTA DE EMPLEADOS</h1> -->
+<div class="col-md-6">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex align-items-center">
+        <input type="text" class="form-control" id="buscar" [(ngModel)]="terminoBusqueda" placeholder="Buscar por nombre..."
+          (keyup)="buscar(terminoBusqueda)">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<div class="col-md-12 mx-auto">
+<mat-card>
+  <!-- Contenido de la primera columna -->
+  <table class="table table-hover table-responsive-lg">
+    <thead class="table-dark">
+      <tr>
+        <th>Clave</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Telefono</th>
+        <th>Edad</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let empleado of empleado">
+        <td>{{empleado.codigo}}</td>
+        <td>{{empleado.nombres}}</td>
+        <td>{{empleado.apellidos}}</td>
+        <td>{{empleado.telefono}}</td>
+        <td>{{empleado.edad}}</td>
+        <td>
+          <button type="button" class="btn btn-success" style="margin-left : 25px;font-weight: bold;" 
+                  (click)="actualizarEmpleado(empleado.codigo)">Actualizar</button>
+
+          <button type="button" class="btn btn-secondary" style="margin-left : 25px;font-weight: bold;" data-toggle="modal"
+            data-target="#exampleModal" (click)="showModal(empleado.codigo)">Ver detalles</button>
+
+          <button type="button" class="btn btn-danger" style="margin-left : 25px;font-weight: bold;"
+          (click)="deleteByCodigo(empleado.codigo)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</mat-card>
+</div>

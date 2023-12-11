@@ -1,0 +1,73 @@
+<br>
+    <div  class="col-md-12">
+    <h3 class="titulo">ACTUALIZAR EMPLEADO</h3>
+    <div class="detalles-modal">
+    <mat-card> 
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="codigo">Clave</label>
+            <input  [disabled]=true type="number" class="form-control"
+            id="codigo" placeholder="Ingrese el codigo"
+            [(ngModel)]="empleadoModal.codigo"
+            name ="codigo" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nombres">Nombres</label>
+             <input type="text" class="form-control"
+             id="nombre"  placeholder="Ingrese los nombres"
+             [(ngModel)]="empleadoModal.nombres"
+             name ="nombre" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="apellidos">Apellidos</label>
+           <input type="text" class="form-control"
+            id="Apellido" placeholder="Ingrese los Apellidos"
+            [(ngModel)]="empleadoModal.apellidos"
+            name ="apellido">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="cedula">Cédula</label>
+            <input type="text" class="form-control" id="cedula" placeholder="Ingrese la cédula"
+            [(ngModel)]="empleadoModal.cedula"  name ="cedula">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="edad">Edad</label>
+          <input type="number" class="form-control"
+          id="edad" placeholder="Ingrese la edad"
+          [(ngModel)]="empleadoModal.edad"
+          name ="edad">
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="number" class="form-control"
+          id="telefono" placeholder="Ingrese el teléfono"
+          [(ngModel)]="empleadoModal.telefono"
+          name ="telefono">
+        </div>
+        <div class="form-group">
+          <label for="fechaNacimiento">Fecha de nacimiento</label>
+          <input type="date" class="form-control" id="fechaNacimiento"
+          [(ngModel)]="empleadoModal.fecha_nacimiento" name ="fecha_nacimiento">
+        </div>
+        <div class="row justify-content-between horizontal-gap">
+          <div class="col-12">
+            <div class="row">
+              <div class="offset-6"></div>
+              <!-- <button mat-raised-button color="primary">Actualizar</button> -->
+              <div class="col-3">
+                  <button mat-raised-button color="warn" style=" background-color: rgb(109, 107, 107)" (click)="irAlaListaDeEmpleados()">Regresar</button>
+              </div>
+              <div class="col-3">
+                <button mat-raised-button color="primary" style=" background-color: rgb(71, 153, 51)"  type="submit" >Actualizar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </mat-card>
+</div>
+</div>

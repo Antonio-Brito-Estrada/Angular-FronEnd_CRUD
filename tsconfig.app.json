@@ -1,0 +1,29 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": {
+      "version": "5.2.3",
+      "resolved": "https://registry.npmjs.org/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-5.2.3.tgz",
+      "integrity": "sha512-kSKQNgtHAoZ1MZ+KpwIrzwh5OKpzW/3e7T3aDZfk1XnMSvTdV9DLa8hJ/yfstvv73T03wQmvEjbd9jM0odPw1Q==",
+      "requires": {
+        "tslib": "^1.9.0"
+      }
+    },
+    "bootstrap": {
+      "version": "4.6.2",
+      "resolved": "https://registry.npmjs.org/bootstrap/-/bootstrap-4.6.2.tgz",
+      "integrity": "sha512-51Bbp/Uxr9aTuy6ca/8FbFloBUJZLHwnhTcnjIeRn2suQWsWzcuJhGjKDB5eppVte/8oCdOL3VuwxvZDUggwGQ=="
+    },
+  },
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ]
+}

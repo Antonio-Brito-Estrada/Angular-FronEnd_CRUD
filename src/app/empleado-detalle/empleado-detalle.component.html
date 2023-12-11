@@ -1,0 +1,18 @@
+<br><br>
+<mat-card>
+    <div class="col-md-6 offset-md-3">
+        <h3 class="titulo">Detalle empleado</h3>
+        <br><br>
+        <div class="datos">
+            <div><b>Codigo:</b><label>{{empleado.codigo}}</label><br></div>
+            <div><b>Nombre:</b><label>{{empleado.nombres}}</label><br></div>
+            <div><b>Apellidos:</b><label>{{empleado.apellidos}}</label><br></div>
+            <div><b>Telefono:</b><label>{{empleado.telefono}}</label><br></div>
+            <div><b>Edad:</b><label>{{empleado.edad}}</label></div>
+        </div>
+        <br><br>
+        <div style="text-align: right;">
+            <button type="button" class="btn btn-success" (click)="gresar()">Regresar</button>
+        </div>
+    </div>
+</mat-card>
